@@ -16,7 +16,7 @@ ___
    * `[1, 'a', 3.14, [2, 3, 4], 'boom!'...]`
 
 4. Ассоциативные массивы **Hash**
-   * `colours = {"white"=>"255255255", 255000000=>"red"}`
+   * `{"one"=>1, 2=>"two", "three"=>3.0...}`
 
 5. Строки **String**
    * `'The Earth is very dangerous', "go back to Mars"`
