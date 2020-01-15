@@ -44,3 +44,22 @@ hash["three"] = 3.0                         # {1="one", "two"=>2, "three"=>3.0}
                                             # ...равносильно hash.merge!({"three"=>3.0})
 sec_hash = hash.merge({"four"=>"четыре"})
 p [hash, sec_hash, hash != sec_hash]
+
+=begin
+    Строки
+    -- Строки в кавычках(") позволяют вставлять произвольные переменные #{var}
+    -- Любой объект преобразуется в строку по контексту или с помощью (.to_s)
+=end
+name = 'Konstantin'
+age = 30
+welcome = "Hello, #{name}(#{age})" # "Hello, Konstantin(30)"
+p [welcome, age, age.to_s]
+
+=begin
+    Диапазоны
+    - !Однотипные начало и конец диапазона "a".."z", 1...1000
+    -- (n..m) от n до m(включительно)
+    -- (n...m) от n до m
+=end
+range_nums = 1..5
+p [range_nums, range_nums.to_a]
