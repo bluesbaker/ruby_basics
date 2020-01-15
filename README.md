@@ -1,2 +1,2 @@
-# ruby_basics
-basics and examples
+# Основые конструкции и приемы Ruby
+
