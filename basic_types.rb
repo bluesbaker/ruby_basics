@@ -17,7 +17,7 @@ p frady != fradie
 int_num = 12
 sec_int_num = int_num / 2   # 6
 float_num = int_num / 2.0   # 6.0
-p sec_int_num == sec_int_num
+p sec_int_num == float_num
 
 =begin
     Массивы
