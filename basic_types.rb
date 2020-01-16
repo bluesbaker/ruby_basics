@@ -59,7 +59,7 @@ p [welcome, age, age.to_s]
     Диапазоны
     - !Однотипные начало и конец диапазона "a".."z", 1...1000
     -- (n..m) от n до m(включительно)
-    -- (n...m) от n до m
+    -- (n...m) от n до m-1
 =end
 range_nums = 1..5
 p [range_nums, range_nums.to_a]
