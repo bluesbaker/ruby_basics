@@ -22,6 +22,7 @@ ___
    * `'The Earth is very dangerous', "go back to Mars"`
    * Преобразование в строку любого объекта `.to_s`
    * Произвольные переменные в строке в кавычках `"I love is #{girlfriend}"`
+   * [Подробнее](https://github.com/bluesbaker/ruby_basics/blob/master/string_type.rb)
 
 6. Булевый тип **Boolean**
    * `true, false`
