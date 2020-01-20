@@ -1,4 +1,9 @@
-num1 = 4376.72
-num2 = 761.33
-average = (num1 + num2) / 2
-puts average
+puts "Введите число 1:"
+num1 = gets.chomp.to_i
+puts "Введите число 2:"
+num2 = gets.chomp.to_i
+puts "Введите число 3:"
+num3 = gets.chomp.to_i
+
+average = (num1 + num2 + num3) / 3
+puts "Среднее арифметическое " + average.to_s
