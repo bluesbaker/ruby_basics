@@ -19,3 +19,7 @@ arr.delete_at(0)
 # Объединение массивов 
 new_arr = arr + ["seven", "eight"]
 new_arr.concat(["nine", "ten"])
+
+# Перевернуть массив
+new_arr = arr.reverse   # без изменения исходного
+new_arr.reverse!        # изменение исходного массива
