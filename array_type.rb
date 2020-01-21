@@ -16,3 +16,6 @@ arr.delete("two")
 # Удаление элемента по индексу
 arr.delete_at(0)
 
+# Объединение массивов 
+new_arr = arr + ["seven", "eight"]
+new_arr.concat(["nine", "ten"])
