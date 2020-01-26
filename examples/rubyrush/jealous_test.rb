@@ -5,11 +5,15 @@ argument = ARGV[0]
 
 # для Windows -- преобразование входных аргументов в utf-8
 # TODO -- надо разобраться подробнее
-if (Gem.win_platform? && ARGV[0])
-  argument = argument.dup
-    .force_encoding("IBM866")
-    .encode("IBM866", "cp1251")
-    .encode("UTF-8")
+#if (Gem.win_platform? && ARGV[0])
+#  argument = argument.dup
+#    .force_encoding("IBM866")
+#    .encode("IBM866", "cp1251")
+#    .encode("UTF-8")
+#end
+
+if !ARGV[0]
+    abort "Нет аргументов!"
 end
 
 questions = [
@@ -44,3 +48,5 @@ results = [
     "Вам совершенно незнакомо чувство ревности. Но тревога и беспокойство могут накапливаться " +
     "со временем.Вы должны решать волнующие вас проблемы со своим партнером."
   ]
+
+  puts ARGV[0]
