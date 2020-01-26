@@ -66,5 +66,11 @@ results = [
 
   puts "Результат <#{yes_answers.to_s} ответов \"да\">:"
 
- 
+  if yes_answers < 5
+    puts results[2]
+  elsif yes_answers >= 5 and yes_answers <= 9
+    puts results[1]
+  else
+    puts results[0]
+  end
 
