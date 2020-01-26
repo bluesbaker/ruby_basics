@@ -12,9 +12,9 @@ argument = ARGV[0]
 #    .encode("UTF-8")
 #end
 
-if !ARGV[0]
-    abort "Нет аргументов!"
-end
+#if !ARGV[0]
+#    abort "Нет аргументов!"
+#end
 
 questions = [
     "Если ваш партнер бросает взгляд на незнакомую женщину, вы устраиваете ему скандал прямо на улице?",
@@ -49,4 +49,22 @@ results = [
     "со временем.Вы должны решать волнующие вас проблемы со своим партнером."
   ]
 
-  puts ARGV[0]
+  puts "Тест на ревнивость <ответы \"yes\" или \"no\">";
+
+  yes_answers = 0;
+  for quest in questions do
+      puts quest
+
+      choice = nil
+      while choice != "yes" and choice != "no" do
+          choice = STDIN.gets.chomp.downcase
+      end
+      if choice == "yes"
+        yes_answers += 1
+      end
+  end
+
+  puts "Результат <#{yes_answers.to_s} ответов \"да\">:"
+
+ 
+
