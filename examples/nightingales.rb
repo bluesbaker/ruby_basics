@@ -3,7 +3,7 @@
 temperature = ARGV[0]
 seasone = ARGV[1]
 # для Windows -- преобразование входных аргументов в utf-8
-if (Gem.win_platform? && ARGV[0] && ARGV[1])
+if (Gem.win_platform? and ARGV[0] and ARGV[1])
     temperature = temperature.dup.encode("UTF-8").to_i
     seasone = seasone.dup.encode("UTF-8").to_i
 end
@@ -18,8 +18,8 @@ if seasone == nil
     seasone = STDIN.gets.chomp.to_i
 end
 
-if (seasone == 1 && (temperature >= 15 && temperature <= 35)) or
-    (seasone != 1 && (temperature >= 22 && temperature <= 30))
+if (seasone == 1 and (temperature >= 15 and temperature <= 35)) or
+    (seasone != 1 and (temperature >= 22 and temperature <= 30))
     puts "Соловьи поют!"
 else
     puts "Соловьи молчат!"
