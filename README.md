@@ -13,6 +13,8 @@ ___
 
 3. Гетерогенные массивы **Array**
    * `[1, 'a', 3.14, [2, 3, 4], 'boom!'...]`
+   * [Подробнее](https://github.com/bluesbaker/ruby_basics/blob/master/array_type.rb)
+
 
 4. Ассоциативные массивы **Hash**
    * `{"one"=>1, 2=>"two", "three"=>3.0...}`

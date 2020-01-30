@@ -23,3 +23,9 @@ new_arr.concat(["nine", "ten"])
 # Перевернуть массив
 new_arr = arr.reverse   # без изменения исходного
 new_arr.reverse!        # изменение исходного массива
+
+# Срез значений первых N элементов
+new_arr = arr.take(3) # ["three", "four", "five"]
+
+# Cрез всех значений кроме первых N элементов
+new_arr = arr.drop(3) # ["six"]
