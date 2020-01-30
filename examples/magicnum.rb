@@ -3,46 +3,34 @@ secret_num = rand(16)
 
 puts "Загадано число от 0 до 16, отгадайте какое?"
 
-# Первая попытка
-choice = gets.chomp.to_i
-if choice > secret_num
-    if (choice-secret_num).abs <= 2
-        puts "Тепло (нужно меньше)"
-    else 
-        puts "Холодно (нужно меньше)"
-    end
-elsif choice < secret_num
-    if (choice-secret_num).abs <= 2
-        puts "Тепло (нужно больше)"
+def check_number(guess, number)
+    if guess > number
+        if (guess-number).abs <= 2
+            puts "Тепло (нужно меньше)"
+        else 
+            puts "Холодно (нужно меньше)"
+        end
+        return 0
+    elsif guess < number
+        if (guess-number).abs <= 2
+            puts "Тепло (нужно больше)"
+        else
+            puts "Холодно (нужно больше)"
+        end
+        return 0
     else
-        puts "Холодно (нужно больше)"
+        abort "Ура, вы выиграли!"
+        return 1
     end
-else
-    abort "Ура, вы выиграли!"
 end
 
-# Вторая попытка
-choice = gets.chomp.to_i
-if choice > secret_num
-    if (choice-secret_num).abs <= 2
-        puts "Тепло (нужно меньше)"
-    else 
-        puts "Холодно (нужно меньше)"
+# Три попытки
+for try in 1..3 do
+    choice = STDIN.gets.chomp.to_i
+    won = check_number(choice, secret_num)
+    if won == 1
+        break
+    elsif won == 0 and try == 3
+        puts "Вы проиграли!"
     end
-elsif choice < secret_num
-    if (choice-secret_num).abs <= 2
-        puts "Тепло (нужно больше)"
-    else
-        puts "Холодно (нужно больше)"
-    end
-else
-    abort "Ура, вы выиграли!"
-end
-
-# Третья попытка(окончательная)
-choice = gets.chomp.to_i
-if choice != secret_num
-    abort "Вы проиграли!"
-else
-    abort "Ура, вы выиграли!"
 end
