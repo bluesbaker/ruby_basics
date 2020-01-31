@@ -25,10 +25,14 @@ new_arr = arr.reverse   # без изменения исходного
 new_arr.reverse!        # изменение исходного массива
 
 # Срез значений первых N элементов
-new_arr = arr.take(3) # ["three", "four", "five"]
+new_arr = arr.take(3)   # ["three", "four", "five"]
 
 # Cрез всех значений кроме первых N элементов
-new_arr = arr.drop(3) # ["six"]
+new_arr = arr.drop(3)   # ["six"]
 
 # Проверка на вхождение элемента в массив
 ["one", "two", "three"].include?("two") # true
+
+# Оставить только уникальные элементы массива,
+# uniq! -- переопределит оригинальный массив
+["one", "two", "one", "three"].uniq     # ["one", "two", "three"]
