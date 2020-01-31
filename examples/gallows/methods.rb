@@ -21,6 +21,8 @@ def get_user_input
 end
 
 def check_result(user_input, letters, good_letters, bad_letters)
-    #...
+    if good_letters.include?(user_input) or bad_letters.include?(user_input)
+        return 0
+    end
 end
 
