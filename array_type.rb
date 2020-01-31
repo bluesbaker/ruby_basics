@@ -29,3 +29,6 @@ new_arr = arr.take(3) # ["three", "four", "five"]
 
 # Cрез всех значений кроме первых N элементов
 new_arr = arr.drop(3) # ["six"]
+
+# Проверка на вхождение элемента в массив
+["one", "two", "three"].include?("two") # true
