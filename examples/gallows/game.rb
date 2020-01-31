@@ -1,17 +1,17 @@
 # Игра «Виселица»
 
-require "./methods.rb"
+require_relative "game_methods"
 
 letters = get_letters
 
-error = 0
+errors = 0
 good_letters = []
 bad_letters = []
 
 while errors < 7 do
     
     # состояние игры
-    print_status(letters, good_letters, bad_letters, error)
+    print_status(letters, good_letters, bad_letters, errors)
 
     puts "\nВведите следующую букву"
     user_input = get_user_input()
@@ -20,13 +20,13 @@ while errors < 7 do
     result = check_result(user_input, letters, good_letters, bad_letters)
 
     if result == -1
-        error += 1
+        errors += 1
     elsif result == 1
         break
     end    
 end
 
 # еще раз напоследок статус игры
-print_status(letters, good_letters, bad_letters, error)
+print_status(letters, good_letters, bad_letters, errors)
 
 
