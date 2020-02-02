@@ -36,3 +36,7 @@ new_arr = arr.drop(3)   # ["six"]
 # Оставить только уникальные элементы массива,
 # uniq! -- переопределит оригинальный массив
 ["one", "two", "one", "three"].uniq     # ["one", "two", "three"]
+
+# Сливает массив в строку добавляя разделитель
+# !Обратный метод -- String.split(separator)
+["one", "two", "three"].join("!, ")   # "one!, two!, three!"
