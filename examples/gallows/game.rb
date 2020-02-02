@@ -1,5 +1,9 @@
 # Игра «Виселица»
 
+# require "./game_methods.rb" -- будет работать, только если запустить файл
+# из каталога программы "...examples/gallows/". 
+# Если запустить файл из каталога выше, то Ruby будет искать файл
+# относительно каталога из которого проводилась команда "ruby ..."
 require_relative "game_methods"
 
 letters = get_letters
@@ -7,6 +11,9 @@ letters = get_letters
 errors = 0
 good_letters = []
 bad_letters = []
+
+# очистка экрана от «мусора»
+system_cls
 
 while errors < 7 do
     

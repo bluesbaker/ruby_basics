@@ -71,3 +71,8 @@ def print_status(letters, good_letters, bad_letters, errors)
     end
 end
 
+# Очистка экрана
+def system_cls
+    system "clear" or system "cls"
+end
+
