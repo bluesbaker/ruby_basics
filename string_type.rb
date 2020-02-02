@@ -25,6 +25,8 @@ result = str <=> "abcde"    # 1
 result = str <=> "abcdefg"  # -1
 result = str <=> "ABCDEF"   # 1
 
+# Разбить строку на элементы в массив по разделителю
+str.split(",")  # ["a", "b", "c", "d", "e"]
+
 # Сопоставление с шаблоном - =~, .match
 str = "cat o' 9 tails" =~ /\d/
-
