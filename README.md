@@ -41,3 +41,4 @@ ___
 8. Классы **Class**
 
 9. Циклы **Loops**
+   * [Подробнее](https://github.com/bluesbaker/ruby_basics/blob/master/loops.rb)
