@@ -1,6 +1,5 @@
 # Игра «Отгадай число»
 secret_num = rand(16)
-
 puts "Загадано число от 0 до 16, отгадайте какое?"
 
 def check_number(guess, number)
