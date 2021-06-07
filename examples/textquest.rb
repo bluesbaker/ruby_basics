@@ -15,7 +15,6 @@ while choice < 0 or choice > 2 do
     choice = gets.chomp.to_i
 end
 
-
 if choice == 1
     abort "Ничего не произошло. Мальчик состарился и умер... в одиночестве"
 else
